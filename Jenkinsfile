@@ -6,7 +6,7 @@ node('built-in')
         }
     stage('Continuous Build')
          {
-	input 'waiting for you to authorize'
+	echo 'building package'
 	sh 'mvn package' 
         }
  }
